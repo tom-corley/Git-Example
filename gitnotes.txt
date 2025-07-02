@@ -16,11 +16,13 @@ git understands three trees:
 Head is a pointer to latest commit
 
 - Restore: (CHILL) restores files in working area to their last versions added to the staging area
-- Revert: (RISKY) reverts files in working area to the last commited versions
-- Reset: (DANGEROUS) 
+- Revert: (RISKY) reverts files in working area to the last commited versions, need commit id
+- Reset: (DANGEROUS) 5 versions, it affects the commit history (which can be confusing)
 
 git init - initialise repository
 git status - summary of whats going on .
 git add [file] - track to (. commits all in pwd, avoid . as includes unnecessary files)
 git log - shows changes (--oneline for better output)
 git restore - see above, (--staged basically empties staging area)
+git revert - see above
+git reset [commit-id] = (--soft) is chill version 
