@@ -8,18 +8,28 @@ ls - show files  (-a includes hidden)
 -h on a command gives you help
 
 commits are like a save state of a file
-git understands three trees:
+git understands four trees:
     index/working area: directory tree on user machine
     staging area: directory tree of changes not yet commited
     commits area: timelines of committed versions
+    repository: remotely accessible file storage on cloud/internet (copy of local .git folder)
 
-Head is a pointer to latest commit BLA BLA BLA remove plz
+Head is a pointer to latest commit
+Lies: it is an object, lives within .git folder, tells you what latest commit is
+Can use head to tell you where you are in commit history
 
 - Restore: (CHILL) restores files in working area to their last versions added to the staging area
+    Working <-> Staging
 - Revert: (RISKY) reverts files in working area to the last commited versions, need commit id
+    Working <-> Commits
 - Reset: (DANGEROUS) 5 versions, it affects the commit history (which can be confusing), restores to a given commit and truncates history to this point
         (--mixed) acts as if add has taken place
         (--hard) take me to a point in history, destroy all history after that point
+    Working <-> Commits
+
+Repository 
+
+
 git init - initialise repository
 git status - summary of whats going on .
 git add [file] - track to (. commits all in pwd, avoid . as includes unnecessary files)
@@ -27,3 +37,6 @@ git log - shows changes (--oneline for better output)
 git restore - see above, (--staged basically empties staging area)
 git revert - see above
 git reset [commit-id] = (--soft) is chill version 
+git reflog - reflection log (reset head one step, head ~2 two steps behind)
+git remote add origin git@github.com:[user]/[repo-address]
+    push local work to existing repository
