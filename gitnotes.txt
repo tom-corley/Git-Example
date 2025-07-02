@@ -39,7 +39,16 @@ Conflict marker:
 Solution is working on different branches, send in pull request
 Branches are kind of alternate timelines for the file, can open another branch 
 
+Workflow:  
+    main branch - production ready
+    test branch - decently made but needs testing
+    dev branch - development
+        |
+        -- feature branch, individual adding their own code
 
+prune branches which are not being used anymore
+
+.gitignore tells git which files and folders to ignore, * is wildcard
 
 git init - initialise repository
 git status - summary of whats going on .
@@ -53,3 +62,4 @@ git remote add origin git@github.com:[user]/[repo-address]
     push local work to existing repository
 git checkout -b [new-branch-namte] - creates new branch and switch on to it
     git checkout - switch to existing branch
+git branch - see what branch you are on (-D [branch-name]) delete branch 
