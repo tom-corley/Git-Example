@@ -40,9 +40,9 @@ Solution is working on different branches, send in pull request
 Branches are kind of alternate timelines for the file, can open another branch 
 
 Workflow:  
-    main branch - production ready
-    test branch - decently made but needs testing
-    dev branch - development
+    - main branch - production ready
+    - test branch - decently made but needs testing
+    - dev branch - development
         |
         -- feature branch, individual adding their own code
 
