@@ -27,7 +27,18 @@ Can use head to tell you where you are in commit history
         (--hard) take me to a point in history, destroy all history after that point
     Working <-> Commits
 
-Repository 
+Divergent branches are when multiple conflicting versions of a branch exist
+lead to merge conflict
+
+Conflict marker: 
+    bit in red is local version
+    ==== is division
+    bit in green is version on repo
+    Then can delete red bit and fix, then commit change
+
+Solution is working on different branches, send in pull request
+Branches are kind of alternate timelines for the file, can open another branch 
+
 
 
 git init - initialise repository
@@ -40,3 +51,5 @@ git reset [commit-id] = (--soft) is chill version
 git reflog - reflection log (reset head one step, head ~2 two steps behind)
 git remote add origin git@github.com:[user]/[repo-address]
     push local work to existing repository
+git checkout -b [new-branch-namte] - creates new branch and switch on to it
+    git checkout - switch to existing branch
