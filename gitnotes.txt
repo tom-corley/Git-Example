@@ -1,8 +1,12 @@
 Git:
 
+vim is a modal editor, type or move, not both: i for insert, m for move
+
 cli prompt is bit before you command 3 parts:
     who user is, ..., ...
 ls - show files  (-a includes hidden)
+
+commits are like a save state of a file
 
 git init - initialise repository
 git status - summary of whats going on .
